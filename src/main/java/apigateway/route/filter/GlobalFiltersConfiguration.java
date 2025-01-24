@@ -9,6 +9,10 @@ import org.springframework.core.annotation.Order;
 
 import reactor.core.publisher.Mono;
 
+/**
+ * Post and pre we can put in same class also.
+ * prefilter lower is order num higher is priority and in post higher is order number higher is priority.
+ */
 @Configuration
 public class GlobalFiltersConfiguration {
 	

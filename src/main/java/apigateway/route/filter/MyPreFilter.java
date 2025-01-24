@@ -40,6 +40,10 @@ public class MyPreFilter implements GlobalFilter, Ordered {
 		return chain.filter(exchange);
 	}
 
+	/*
+	 * This determine the order in which they will be executed lower is order number higher is priority for pre filter.
+	 * If all have same order then implementation will dtermine wether its pre or post.
+	 */
 	@Override
 	public int getOrder() {
 		
